@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+  ],
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+    }
+  },
+  "rules": {
+    "space-before-function-paren": 0,
+    "import/export": 0,
+    "semi": [1, "always"] // 1 is for warning
+  }
+}

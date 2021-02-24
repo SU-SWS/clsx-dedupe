@@ -1,0 +1,36 @@
+{
+  "name": "clsx-dedupe",
+  "version": "0.0.1",
+  "description": "A light wrapper around clsx for deduping",
+  "source": "index.js",
+  "main": "dist/clsx-dedupe.js",
+  "module": "dist/clsx-dedupe.module.js",
+  "unpkg": "dist/clsx-dedupe.umd.js",
+  "esmodule": "dist/clsx-dedupe.modern.js",
+  "scripts": {
+    "build": "microbundle-crl -o dist/ --no-compress --sourcemap false",
+    "watch": "microbundle-crl watch -o dist/ --no-compress --sourcemap false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/su-sws/clsx-dedupe.git"
+  },
+  "keywords": [
+    "classnames",
+    "classname",
+    "clsx",
+    "dedupe"
+  ],
+  "author": "Stanford Web Services",
+  "license": "GPL-3.0-or-greater",
+  "bugs": {
+    "url": "https://github.com/su-sws/clsx-dedupe/issues"
+  },
+  "homepage": "https://github.com/su-sws/clsx-dedupe#readme",
+  "dependencies": {
+    "clsx": "^1.1.1"
+  },
+  "devDependencies": {
+    "microbundle-crl": "^0.13.11"
+  }
+}
