@@ -1,7 +1,7 @@
 # [CLSX Dedupe](https://github.com/SU-SWS/clsx-dedupe)
 
 
-Maintainers: [sherakama](https://github.com/sherakama)  
+Maintainers: [sherakama](https://github.com/sherakama)
 
 Description
 ---
@@ -16,9 +16,10 @@ Installation
 Then
 
 ```
-import { clsxd } from 'clsx-dedupe'
+import clsxd from 'clsx-dedupe'
 
-const classnames = clsxd('one', ['two', 'three'], {'four': true})
+const classnames = clsxd('one', ['two', 'three', [[[['five']]]]], {'four': true}, {'one': false})
+// Output: two three five four
 ```
 
 Configuration
