@@ -6,7 +6,7 @@ import clsx from 'clsx'
  * For each of the arguments passed to the function parse them into an object
  * so we can send it through to clsx
  */
-const clsxd = (arg) => {
+const _clsxd = (arg) => {
 
   switch (arg.constructor.name) {
     case "Object":
@@ -60,7 +60,7 @@ export default function() {
   let i = 0, tmp, obj = {};
   while (i < arguments.length) {
     if (tmp = arguments[i++]) {
-      if (val = clsxd(tmp)) {
+      if (val = _clsxd(tmp)) {
         obj = {...obj, ...val}
       }
     }

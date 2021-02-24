@@ -18,7 +18,7 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var clsxd = function clsxd(arg) {
+var _clsxd = function _clsxd(arg) {
   switch (arg.constructor.name) {
     case "Object":
       return arg;
@@ -49,14 +49,14 @@ var _parseString = function _parseString(arg) {
   return Object.fromEntries(flatObj);
 };
 
-function index () {
+function clsxd () {
   var i = 0,
       tmp,
       obj = {};
 
   while (i < arguments.length) {
     if (tmp = arguments[i++]) {
-      if (val = clsxd(tmp)) {
+      if (val = _clsxd(tmp)) {
         obj = _extends({}, obj, val);
       }
     }
@@ -65,4 +65,4 @@ function index () {
   return clsx(obj);
 }
 
-export default index;
+export default clsxd;
