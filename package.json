@@ -1,12 +1,20 @@
 {
   "name": "clsx-dedupe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A light wrapper around clsx for deduping",
   "source": "clsxd.js",
   "main": "dist/clsx-dedupe.js",
   "module": "dist/clsx-dedupe.module.js",
   "unpkg": "dist/clsx-dedupe.umd.js",
   "esmodule": "dist/clsx-dedupe.modern.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/clsx-dedupe.modern.js",
+      "import": "./dist/clsx-dedupe.module.js",
+      "require": "./dist/clsx-dedupe.js",
+      "umd": "./dist/clsx-dedupe.umd.js"
+    }
+  },
   "scripts": {
     "build": "microbundle-crl -o dist/ --no-compress --sourcemap false",
     "watch": "microbundle-crl watch -o dist/ --no-compress --sourcemap false"
