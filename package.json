@@ -1,6 +1,6 @@
 {
   "name": "clsx-dedupe",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A light wrapper around clsx for deduping",
   "source": "clsxd.js",
   "main": "dist/clsx-dedupe.js",
