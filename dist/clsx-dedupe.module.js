@@ -52,6 +52,7 @@ var _parseString = function _parseString(arg) {
 function clsxd () {
   var i = 0,
       tmp,
+      val,
       obj = {};
 
   while (i < arguments.length) {

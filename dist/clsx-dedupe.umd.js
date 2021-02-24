@@ -57,6 +57,7 @@
   function clsxd () {
     var i = 0,
         tmp,
+        val,
         obj = {};
 
     while (i < arguments.length) {

@@ -57,7 +57,7 @@ const _parseString = (arg) => {
  * Arguments pulled from the ether.
  */
 export default function() {
-  let i = 0, tmp, obj = {};
+  let i = 0, tmp, val, obj = {};
   while (i < arguments.length) {
     if (tmp = arguments[i++]) {
       if (val = _clsxd(tmp)) {
