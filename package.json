@@ -1,6 +1,6 @@
 {
   "name": "clsx-dedupe",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A light wrapper around clsx for deduping",
   "source": "clsxd.js",
   "main": "dist/clsx-dedupe.js",
@@ -14,6 +14,12 @@
       "require": "./dist/clsx-dedupe.js",
       "umd": "./dist/clsx-dedupe.umd.js"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
   },
   "scripts": {
     "build": "microbundle-crl -o dist/ --no-compress --sourcemap false",
